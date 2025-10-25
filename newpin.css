@@ -34,14 +34,13 @@ input {
     outline: none;
 }
 
-
 input:hover {
     border: 3px solid #888;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
     transition: 0.3s;
 }
 
-#confirm {
+#msgAlert {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,6 +53,6 @@ input:hover {
   transition: 0.3s;
 }
 
-#confirm:hover {
+#msgAlert:hover {
   background-color: rgb(110, 52, 190);
 }
