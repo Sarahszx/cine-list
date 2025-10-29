@@ -4,15 +4,26 @@ import Link from "next/link"
 
 export default function EsqueciMinhaSenha() {
   return (
-    <>
-      <div>Esqueci minha senha</div>
-      <Angry className="h-6 w-6" />
-      <Image src="/icon-2.png" alt="Icone" width={32} height={32} />
-      <Link href="/">
-        <div>
-          Oi
-        </div>
-      </Link>
-    </>
+    <div className="w-full h-screen flex justify-center items-center">
+      <div className="bg-violet-300 w-1/2 rounded-2xl P-6 flex justify-center items-center">
+        <Image src="/icon-3.png" alt="Icone" width={48} height={48} /> 
+        <div className=" text-black ">
+
+          Esqueci minha senha
+          
+          </div>
+        <Angry className="h-6 w-6" />
+        <Link href="/">
+          <div className="text-gray-800"> 
+             para recuperar o acesso, insira o e-mail da sua conta e enviaremos um link para redefinir
+          </div>  
+        </Link>
+<div>
+    <label htmlFor="email:">E-mail:</label>
+    <input type="email" name="" id="email" />
+</div>
+      </div >
+
+    </div>
   )
 }
