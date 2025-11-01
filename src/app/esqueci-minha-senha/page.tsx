@@ -15,7 +15,7 @@ export default function EsqueciMinhaSenha() {
     return (
       <div className="w-full h-screen flex justify-center items-center">
         <Link href="/login">
-          <div className="bg-gradient-to-r from-purple-800 to-gray-700 w-85 h-45 rounded-2xl items-center flex justify-center"> <h1 className="cursor-default text-center text-white-700 font-serif"><strong>Senha alterada com sucesso</strong>
+          <div className="bg-gradient-to-r from-purple-800 to-gray-700 w-105 h-45 rounded-2xl items-center flex justify-center"> <h1 className="cursor-default text-center text-white-700 font-serif"><strong>Link de redefinição foi enviado para o seu email</strong>
             <button className="bg-violet-900 rounded-2xl w-55 h-12 mt-6 "> <h1 className="cursor-pointer flex justify-center text-center items-center">voltar a pagina de login</h1></button></h1>
           </div>
         </Link>
