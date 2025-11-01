@@ -5,13 +5,26 @@ import Link from "next/link"
 
 export default function EsqueciMinhaSenha() {
 
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const toggleDisplay = () => {
-    setIsVisible(!isVisible);
-    
+    setIsVisible(false);
+
   };
+
+  if (!isVisible) {
+    return (
+      <div className="w-full h-screen flex justify-center items-center">
+        <Link href="/login">
+          <div className="bg-gradient-to-r from-purple-800 to-gray-700 w-85 h-45 rounded-2xl items-center flex justify-center"> <h1 className="cursor-default text-center text-white-700 font-serif"><strong>Senha alterada com sucesso</strong>
+            <button className="bg-violet-900 rounded-2xl w-55 h-12 mt-6 "> <h1 className="cursor-pointer flex justify-center text-center items-center">voltar a pagina de login</h1></button></h1>
+          </div>
+        </Link>
+      </div>
+    )
+  }
+
   return (
-    <div style={{display: isVisible ? 'block' : 'none'}} id='main' className="w-full h-screen flex flex-col justify-center items-center">
+    <div id='main' className="w-full h-screen flex flex-col justify-center items-center">
       <div className="bg-violet-300 w-3x1 rounded-2xl P-6 flex flex-col justify-center items-center gap-4 py-6">
         <Link href="/login" > <Image src="/icon-3.png" alt="Icone" width={200} height={200} className="mb-4" /> </Link>
         <div className=" text-black flex flex-col justify-center items-center text-5xl font-semibold ">
@@ -30,28 +43,14 @@ export default function EsqueciMinhaSenha() {
         </div>
 
         <div>
-          <button onClick={ () => toggleDisplay} id='enviar' className="bg-violet-800 text-white p-2 rounded-2xl hover:via-violet-950 transition text-2xl py-2 px-15  ">
-            {isVisible ? 'Ocultar' : 'Mostrar'} enviar →</button></div>
+          <button onClick={toggleDisplay} id='enviar' className="bg-violet-800 text-white p-2 rounded-2xl hover:via-violet-950 transition text-2xl py-2 px-15  ">
+            enviar →</button></div>
       </div >
 
     </div>
-    
+
   )
-  
+
 }
 
-export function msgAlert() {
-  
-    const [isVisible] = useState(false);
-    return (
-    <div  style={{display: isVisible ? 'block' : 'none'}} className="w-full h-screen flex justify-center items-center">
-      <Link href="../login/page.tsx">
-       <div className="bg-gradient-to-r from-purple-800 to-gray-700 w-85 h-45 rounded-2xl items-center flex justify-center"> <h1 className="cursor-default text-center text-white-700 font-serif"><strong>Senha alterada com sucesso</strong>
-       <button className="bg-violet-900 rounded-2xl w-55 h-12 mt-6 "> <h1 className="cursor-pointer flex justify-center text-center items-center">voltar a pagina de login</h1></button></h1>
-       </div>      
-      </Link>
-    </div>
-)
-}
 
-  
