@@ -2,7 +2,7 @@ import FilmCategory, { Film } from "@/components/film-category";
 
 const allFilms: { category: string; films: Film[] }[] = [
     {
-        category: 'Ação',
+        category: 'AÇÃO',
         films: [
             {
                 image: 'https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg',
@@ -15,7 +15,7 @@ const allFilms: { category: string; films: Film[] }[] = [
         ]
     },
     {
-        category: 'Romance',
+        category: 'ROMANCE',
         films: [
             {
                 image: 'https://br.web.img2.acsta.net/c_310_420/pictures/14/12/11/15/29/051042.jpg',

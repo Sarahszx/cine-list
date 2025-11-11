@@ -12,14 +12,17 @@ interface FilmCategoryProps {
 export default function FilmCategory({ category, films }: FilmCategoryProps) {
 
     return (
-        <div className="bg-violet-950 flex gap-10 pb-8"  > 
-            <div>{category}</div>
+        <div className="bg-violet-900 flex gap-10 pb-8 px-20"  > 
+
             
-            <div className="flex gap-4 ">
+            <div className="flex gap-10 bg-violet-400 rounded p-6 marg">
+
+        <div className=" text-black font-bold ">{category} </div>
+
                 {films.map((film, index) => (
                     <div key={index}>
-                        <img className=" pb-4"src={film.image} alt={film.name} />
-                        <div className=" text-center">{film.name}</div>
+                        <img className=" pb-3"src={film.image} alt={film.name} />
+                        <div className=" text-center text-black">{film.name}</div>
                     </div>
                 ))}
 
