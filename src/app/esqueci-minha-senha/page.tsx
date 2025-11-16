@@ -25,11 +25,13 @@ export default function EsqueciMinhaSenha() {
   }
 
   return (
+       <div className="min-h-screen w-full flex items-center justify-center bg-[url(/bg.webp)] bg-cover bg-center bg-no-repeat shadow-md">
     <div id='main' className="w-full h-screen flex flex-col justify-center items-center">
       <div className="bg-violet-300 w-3x1 rounded-2xl P-6 flex flex-col justify-center items-center gap-4 py-6">
         <div className='flex relative w-full justify-center'>
           <Link href="./login">
             <div className='bg-violet-800 hover:bg-violet-700 flex justify-center items-center rounded-full p-1 absolute left-4'>
+            
               <ArrowLeft />
             </div>
           </Link>
@@ -46,16 +48,16 @@ export default function EsqueciMinhaSenha() {
 
         <div>
           <label htmlFor="email:" className="text-black text-2xl ml-auto " >E-mail:</label>
-          <input type="email" name="" id="email" placeholder="seu@email.com" className="text-black pl-1 border border-gray-500 w-full rounded-md ml-auto " />
+          <input type="email" name="email" id="email" placeholder="seu@email.com" className="text-black pl-1 border border-gray-500 w-full rounded-md ml-auto " required/>
         </div>
 
         <div>
-          <button onClick={toggleDisplay} id='enviar' className="bg-violet-800 text-white p-2 rounded-2xl hover:via-violet-950 transition text-2xl py-2 px-15  ">
-            enviar →</button></div>
+          <button onClick={toggleDisplay} id='enviar' className="bg-violet-800 text-white p-2 rounded-2xl hover:via-violet-950 transition text-2xl py-2 px-15 ">
+           <a href="../esqueci-minha-senha"> enviar →</a></button></div>
       </div >
 
     </div>
-
+</div>
   )
 
 }
