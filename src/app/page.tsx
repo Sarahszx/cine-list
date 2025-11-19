@@ -1,7 +1,7 @@
 'use client';
 
 import FilmCategory from "@/components/film-category";
-import { FilmsByCategory } from "@/types";
+import { Film, FilmsByCategory } from "@/types";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -10,14 +10,22 @@ export default function Home() {
     useEffect(() => {
       const fetchFilms = async () => {
         try {
-          const response = await fetch('http://localhost:8080/films-grouped-by-category');
+          const response = await fetch('http://localhost:8080/films');
 
           if (!response.ok) {
             throw new Error('Network response was not ok');
           }
 
           const data = await response.json();
-          setAllFilms(data);
+          const categories = data.map((item: Film) => item.category);
+          const filmsByCategory: FilmsByCategory[] = categories.map((category: string) => ({
+            category,
+            films: data.filter((film: Film) => film.category === category),
+          }));
+
+          console.log(filmsByCategory);
+
+          setAllFilms(filmsByCategory);
         } catch (error) {
           console.error('Error fetching films:', error);
         }
@@ -28,11 +36,11 @@ export default function Home() {
 
     return (
         <div>
-            {allFilms.map((filme, index) => (
+            {allFilms.map((film, index) => (
                 <FilmCategory
                     key={index}
-                    category={filme.category}
-                    films={filme.films}
+                    category={film.category}
+                    films={film.films}
                 />
             ))}
         </div>
