@@ -17,13 +17,11 @@ export default function Home() {
           }
 
           const data = await response.json();
-          const categories = data.map((item: Film) => item.category);
+          const categories: string[] = Array.from(new Set(data.map((film: Film) => film.category)));
           const filmsByCategory: FilmsByCategory[] = categories.map((category: string) => ({
             category,
             films: data.filter((film: Film) => film.category === category),
           }));
-
-          console.log(filmsByCategory);
 
           setAllFilms(filmsByCategory);
         } catch (error) {
