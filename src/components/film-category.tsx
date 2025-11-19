@@ -1,4 +1,8 @@
+import Link from "next/link";
+
+
 export interface Film {
+    id: string
     name: string
     image: string
   
@@ -21,8 +25,11 @@ export default function FilmCategory({ category, films }: FilmCategoryProps) {
 
                 {films.map((film, index) => (
                     <div key={index}>
+                        <Link href={`/filme/${film.id}`}>
                         <img className=" pb-3"src={film.image} alt={film.name} />
+                        </Link>
                         <div className=" text-center text-black">{film.name}</div>
+
                     </div>
                 ))}
 
