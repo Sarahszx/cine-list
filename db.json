@@ -1,0 +1,52 @@
+{
+  "films-grouped-by-category": [
+    {
+      "category": "Aventura",
+      "films": [
+        {
+          "id": "piratas-1",
+          "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
+          "name": "Piratas do Caribe",
+          "category": "Aventura"
+        },
+        {
+          "id": "piratas-2",
+          "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
+          "name": "Piratas do Caribe",
+          "category": "Aventura"
+        }
+      ]
+    },
+    {
+      "category": "Romance",
+      "films": [
+        {
+          "id": "simplesmente-acontece",
+          "image": "https://br.web.img2.acsta.net/c_310_420/pictures/14/12/11/15/29/051042.jpg",
+          "name": "Simplesmente Acontece",
+          "category": "Romance"
+        }
+      ]
+    }
+  ],
+  "films": [
+    {
+      "id": "piratas-1",
+      "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
+      "name": "Piratas do Caribe",
+      "category": "Aventura"
+    },
+    {
+      "id": "piratas-2",
+      "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
+      "name": "Piratas do Caribe",
+      "category": "Aventura"
+    },
+    {
+      "id": "simplesmente-acontece",
+      "image": "https://br.web.img2.acsta.net/c_310_420/pictures/14/12/11/15/29/051042.jpg",
+      "name": "Simplesmente Acontece",
+      "category": "Romance"
+    }
+  ]
+}

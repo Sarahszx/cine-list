@@ -1,18 +1,10 @@
+import { Film } from "@/types";
 import Link from "next/link";
 
-
-export interface Film {
-    id: string
-    name: string
-    image: string
-  
-}
-
 interface FilmCategoryProps {
-    category: string
-    films: Film[]
+  category: string
+  films: Film[]
 }
-
 
 export default function FilmCategory({ category, films }: FilmCategoryProps) {
 
