@@ -13,6 +13,7 @@ interface FilmCategoryProps {
     films: Film[]
 }
 
+
 export default function FilmCategory({ category, films }: FilmCategoryProps) {
 
     return (

@@ -5,3 +5,4 @@ export default function FilmPage({ params }: { params: { id: string } }) {
     </div>
   );
 }
+

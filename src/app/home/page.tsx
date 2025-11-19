@@ -15,6 +15,7 @@ const allFilms: { category: string; films: Film[] }[] = [
                 name: "Piratas do Caribe"
             }
         ]
+        
     },
     {
         category: "ROMANCE",
