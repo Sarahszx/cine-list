@@ -1,40 +1,19 @@
 {
-  "films-grouped-by-category": [
-    {
-      "category": "Aventura",
-      "films": [
-        {
-          "id": "piratas-1",
-          "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
-          "name": "Piratas do Caribe",
-          "category": "Aventura"
-        },
-        {
-          "id": "piratas-2",
-          "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
-          "name": "Piratas do Caribe",
-          "category": "Aventura"
-        }
-      ]
-    },
-    {
-      "category": "Romance",
-      "films": [
-        {
-          "id": "simplesmente-acontece",
-          "image": "https://br.web.img2.acsta.net/c_310_420/pictures/14/12/11/15/29/051042.jpg",
-          "name": "Simplesmente Acontece",
-          "category": "Romance"
-        }
-      ]
-    }
-  ],
   "films": [
     {
       "id": "piratas-1",
-      "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
-      "name": "Piratas do Caribe",
-      "category": "Aventura"
+      "image": "https://upload.wikimedia.org/wikipedia/pt/e/e6/Pirates_of_the_Caribbean_-_The_Curse_of_the_Black_Pearl.jpg",
+      "name": " Piratas do Caribe: A Maldição do Pérola Negra",
+      "category": "Aventura",
+      "cast": [
+        "Johnny Depp como Capitão Jack Sparrow",
+        "Geoffrey Rush como Capitão Hector Barbossa",
+        "Orlando Bloom como Will Turner",
+        "Keira Knightley como Elizabeth Swann"
+      ],
+      "sinopse": "No século XVII, o governador Weatherby Swann e sua filha Elizabeth resgatam o jovem Will Turner de um navio afundado, e Elizabeth leva um colar com uma moeda de ouro. Oito anos depois, durante a promoção de Norrington a comodoro, Elizabeth desmaia e cai no mar, onde o colar emite um pulso sobrenatural antes de ser salva por Jack Sparrow. Reconhecido como pirata, Jack é preso, mas escapa com a ajuda de Will, que o solta para resgatar Elizabeth, sequestrada pelos piratas do navio Pérola Negra. Jack revela que foi capitão do Pérola Negra, mas sofreu um motim liderado por Barbossa. Barbossa explica que a tripulação, após roubar um baú de moedas de ouro asteca, ficou amaldiçoada, transformando-se em mortos-vivos. A única forma de quebrar a maldição é devolver todas as moedas com sangue, e Barbossa quer usar o de Elizabeth.",
+      "year": "2003",
+      "duration": "2h 23m"
     },
     {
       "id": "piratas-2",

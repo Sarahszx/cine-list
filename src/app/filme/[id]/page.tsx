@@ -29,7 +29,18 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
 
   return (
     <div>
-      {JSON.stringify(data)}
+      <img src={data?.image} alt={data?.name} />
+      
+      <p>Título: {data?.name}</p>
+
+      <span>Elenco: </span>
+      <ul>
+        {(data?.cast || []).map((person, index) => (
+          <div key={index}>{person}</div>
+        ))}
+      </ul>
+
+      <p></p>
     </div>
   );
 }
