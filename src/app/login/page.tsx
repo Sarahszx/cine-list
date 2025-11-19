@@ -1,3 +1,5 @@
+
+
 export default function Login() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center bg-[url(/bg.webp)] bg-cover bg-center bg-no-repeat shadow-md">
@@ -25,11 +27,14 @@ export default function Login() {
             <input className="bg-white h-12 px-2 rounded-md border border-gray-500" type="password" id="password" name="password" required />
           </div>
 
-          <a href="#" className="text-violet-800 hover:text-violet-700 underline">Esqueceu a senha?</a>
+          <a href="../esqueci-minha-senha" className="text-violet-800 hover:text-violet-700 underline">Esqueceu a senha?</a>
 
+           
+            <a href="../home">
           <div className="flex justify-center">
-            <button className="h-12 text-white cursor-pointer min-w-20 p-2 rounded-sm bg-violet-800 hover:bg-violet-700" type="submit">Entrar</button>
+             <button className="h-12 text-white cursor-pointer min-w-20 p-2 rounded-sm bg-violet-800 hover:bg-violet-700" type="submit"><a href="../home">Entrar</a></button>
           </div>
+           </a>
         </form>
       </div>
     </div>
