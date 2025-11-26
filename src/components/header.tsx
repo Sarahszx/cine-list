@@ -1,6 +1,11 @@
 import { Search } from "lucide-react";
 import Link from "next/link";
-export default function Header() {
+
+interface HeaderProps {
+  setSearchTerm: (term: string) => void;
+}
+
+export default function Header({ setSearchTerm }: HeaderProps) {
   return (
     <header className="flex justify-between items-center px-4 h-16 outline-6 outline-purple-500 outline-offset-[-4px] bg-purple-500">
       <Link href="/">
@@ -11,6 +16,7 @@ export default function Header() {
         <input
           type="search"
           placeholder="Pesquisa"
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="border rounded h-12 px-2 py-1 w-full bg-white text-black"
         />
 

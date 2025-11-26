@@ -7,6 +7,26 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [allFilms, setAllFilms] = useState<FilmsByCategory[]>([])
+  const [filteredFilms, setFilteredFilms] = useState<FilmsByCategory[]>([])
+  const [searchTerm, setSearchTerm] = useState("");
+
+  useEffect(() => {
+    if (searchTerm === "") {
+      setFilteredFilms(allFilms);
+    } else {
+      const lowercasedTerm = searchTerm.toLowerCase();
+      const newFilteredFilms = allFilms
+        .map(group => ({
+          category: group.category,
+          films: group.films.filter(film =>
+            film.name.toLowerCase().includes(lowercasedTerm)
+          )
+        }))
+        .filter(category => category.films.length > 0);
+        
+      setFilteredFilms(newFilteredFilms);
+    }
+  }, [allFilms, searchTerm]);
 
   useEffect(() => {
     const fetchFilms = async () => {
@@ -25,6 +45,7 @@ export default function Home() {
         }));
 
         setAllFilms(filmsByCategory);
+        setFilteredFilms(filmsByCategory);
       } catch (error) {
         console.error('Error fetching films:', error);
       }
@@ -35,10 +56,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen gap-10 bg-violet-900">
-      <Header />
+      <Header setSearchTerm={setSearchTerm} />
 
       <div className="flex flex-col gap-10 px-20 pb-10">
-        {allFilms.map((film, index) => (
+        {filteredFilms.map((film, index) => (
           <FilmCategory
             key={index}
             category={film.category}
