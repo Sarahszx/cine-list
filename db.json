@@ -1,7 +1,7 @@
 {
   "films": [
     {
-      "id": "piratas-1",
+      "id": "1",
       "image": "https://upload.wikimedia.org/wikipedia/pt/e/e6/Pirates_of_the_Caribbean_-_The_Curse_of_the_Black_Pearl.jpg",
       "name": " Piratas do Caribe: A Maldição do Pérola Negra",
       "category": "Aventura",
@@ -11,21 +11,54 @@
         "Orlando Bloom como Will Turner",
         "Keira Knightley como Elizabeth Swann"
       ],
-      "sinopse": "No século XVII, o governador Weatherby Swann e sua filha Elizabeth resgatam o jovem Will Turner de um navio afundado, e Elizabeth leva um colar com uma moeda de ouro. Oito anos depois, durante a promoção de Norrington a comodoro, Elizabeth desmaia e cai no mar, onde o colar emite um pulso sobrenatural antes de ser salva por Jack Sparrow. Reconhecido como pirata, Jack é preso, mas escapa com a ajuda de Will, que o solta para resgatar Elizabeth, sequestrada pelos piratas do navio Pérola Negra. Jack revela que foi capitão do Pérola Negra, mas sofreu um motim liderado por Barbossa. Barbossa explica que a tripulação, após roubar um baú de moedas de ouro asteca, ficou amaldiçoada, transformando-se em mortos-vivos. A única forma de quebrar a maldição é devolver todas as moedas com sangue, e Barbossa quer usar o de Elizabeth.",
-      "year": "2003",
+      "sinopse": "No século XVII, o governador Weatherby Swann e sua filha Elizabeth resgatam o jovem Will Turner de um navio afundado, e Elizabeth leva um colar com uma moeda de ouro. Oito anos depois, durante a promoção de Norrington a comodoro, Elizabeth desmaia e cai no mar, onde o colar emite um pulso sobrenatural antes de ser salva por Jack Sparrow. Reconhecido como pirata, Jack é preso, mas escapa com a ajuda de Will, que o solta para resgatar Elizabeth, sequestrada pelos piratas do navio Pérola Negra. Jack revela que foi capitão do Pérola Negra, mas sofreu um motim liderado por Barbossa. Barbossa explica que a tripulação, após roubar um baú de moedas de ouro asteca, ficou amaldiçoada, transformando-se em mortos-vivos. A única forma de quebrar a maldição é devolver todas as moedas com sangue, e Barbossa quer usar o de Elizabeth.","year": "2003",
       "duration": "2h 23m"
     },
     {
-      "id": "piratas-2",
+      "id": "2",
       "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
       "name": "Piratas do Caribe",
-      "category": "Aventura"
+      "category": "Aventura",
+      "cast": [
+        "Johnny Depp como Capitão Jack Sparrow",
+        "Geoffrey Rush como Barbossa",
+        "Orlando Bloom como will Tuener",
+        "Keira Knightley como Elizabeth Swann"
+      ],
+      "sinopse": "Piratas do Caribe: A Maldição do Pérola Negra
+        é um filme de fantasia Swashbuckler de 2003, dirigido por Gore Verbinski e produzido por 
+        Jerry Bruckheimer. O filme é baseado no brinquedo Piratas do Caribe dos parques temáticos 
+        da Walt Disney Parks and Resorts. A história segue o Capitão pirata Jack Sparrow e o 
+        ferreiro Will Turner enquanto eles tentam resgatar a raptada Elizabeth Swann da tripulação 
+        amaldiçoada do Pérola Negra, comandada pelo Capitão Hector Barbossa. O filme foi um 
+        sucesso de bilheteira, arrecadando mais de US$ 654 milhões mundialmente e foi 
+        indicado a cinco Oscars, incluindo Melhor Ator para Johnny Depp",
     },
     {
-      "id": "simplesmente-acontece",
+      "id": "3",
       "image": "https://br.web.img2.acsta.net/c_310_420/pictures/14/12/11/15/29/051042.jpg",
       "name": "Simplesmente Acontece",
       "category": "Romance"
+    },
+    {
+      "id": "4",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/3/3b/Man_of_Steel%28filme%29.jpg/250px-Man_of_Steel%28filme%29.jpg",
+      "name": "Man Of Steel",
+      "categoria": "ação, aventura sci-fi",
+      "cast": [
+        "Henry Cavill como Superman",
+        "Kevin Costner como Johnathan Kent",
+        "Diana Lane como Marta Kent",
+        "Amy Addams como Lois Lane",
+        "Russel Crowe como Jor-El",
+        "Michael shanon como Zod"
+      ]
+    },
+    {
+      "id": "5",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/78/Baby_Driver_poster.png/250px-Baby_Driver_poster.png",
+      "name": "Baby Driver",
+      "categoria": "ação, comédia, policial, suspene"
     }
   ]
 }
