@@ -5,7 +5,9 @@ export default function Login() {
     <div className="min-h-screen w-full flex items-center justify-center bg-[url(/bg.webp)] bg-cover bg-center bg-no-repeat shadow-md">
       <div className="bg-violet-300 p-8 rounded-2xl w-10/12 lg:w-1/3 flex flex-col gap-8">
         <div className="flex justify-center items-center">
-          <img src="/icon-3.png" alt="Logo" className="h-36" />
+          <Link href="/">
+            <img src="/icon-3.png" alt="Logo" className="h-36" />
+          </Link>
         </div>
         
         <p className="text-center text-black">Utilize suas credenciais abaixo para acessar sua conta.</p>

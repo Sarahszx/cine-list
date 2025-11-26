@@ -38,12 +38,14 @@ export default function EsqueciMinhaSenha() {
         <div className="bg-violet-300 p-8 rounded-2xl w-10/12 lg:w-1/3 flex flex-col gap-8">
           <div className='flex relative w-full justify-center'>
             <Link href="./login">
-              <div className='bg-violet-800 hover:bg-violet-700 flex justify-center items-center rounded-full p-1 absolute left-4'>
+              <div className='bg-violet-800 hover:bg-violet-700 flex justify-center items-center rounded-full p-1 absolute left-0'>
                 <ArrowLeft />
               </div>
             </Link>
 
-            <Image src="/icon-3.png" alt="Icone" width={200} height={200} className="mb-4" />
+            <Link href="/">
+              <Image src="/icon-3.png" alt="Icone" width={200} height={200} className="mb-4" />
+            </Link>
           </div>
 
           <div className=" text-black flex flex-col justify-center items-center font-semibold ">
