@@ -1,6 +1,7 @@
 'use client';
 
 import FilmCategory from "@/components/film-category";
+import Header from "@/components/header";
 import { Film, FilmsByCategory } from "@/types";
 import { useEffect, useState } from "react";
 
@@ -33,13 +34,15 @@ export default function Home() {
     }, []);
 
     return (
-        <div>
+      
+      <div>
+  <Header />
             {allFilms.map((film, index) => (
-                <FilmCategory
-                    key={index}
-                    category={film.category}
-                    films={film.films}
-                />
+              <FilmCategory
+              key={index}
+              category={film.category}
+              films={film.films}
+              />
             ))}
         </div>
     );

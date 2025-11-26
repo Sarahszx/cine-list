@@ -1,5 +1,6 @@
 'use client';
 
+import Header from "@/components/header";
 import { Film } from "@/types";
 import { useEffect, useState } from "react";
 
@@ -29,6 +30,7 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
 
   return (
     <div>
+     <Header />
       <img src={data?.image} alt={data?.name} />
       
       <p>Título: {data?.name}</p>
