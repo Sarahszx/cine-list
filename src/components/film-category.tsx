@@ -7,26 +7,19 @@ interface FilmCategoryProps {
 }
 
 export default function FilmCategory({ category, films }: FilmCategoryProps) {
+  return (
+    <div className="flex gap-10 bg-violet-400 rounded p-6">
+      <div className=" text-black font-bold ">{category}</div>
 
-    return (
-        <div className="bg-violet-900 flex gap-10 pb-8 px-20"  > 
+      {films.map((film, index) => (
+        <div key={index} className="flex flex-col gap-2 w-72 wrap-break-word">
+          <Link href={`/filme/${film.id}`}>
+            <img className="aspect-[3/4] w-72" src={film.image} alt={film.name} />
+          </Link>
 
-            
-            <div className="flex gap-10 bg-violet-400 rounded p-6 marg">
-
-        <div className=" text-black font-bold ">{category} </div>
-
-                {films.map((film, index) => (
-                    <div key={index}>
-                        <Link href={`/filme/${film.id}`}>
-                        <img className=" pb-3"src={film.image} alt={film.name} />
-                        </Link>
-                        <div className=" text-center text-black">{film.name}</div>
-
-                    </div>
-                ))}
-
-            </div>
+          <p className=" text-center text-black">{film.name}</p>
         </div>
-    )
+      ))}
+    </div>
+  )
 }

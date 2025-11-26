@@ -14,13 +14,17 @@ export default function EsqueciMinhaSenha() {
 
   if (!isVisible) {
     return (
-      <div className="w-full h-screen flex justify-center items-center">
-        <div className="bg-violet-300 max-w-82 p-8 rounded-2xl lg:w-2/3 flex flex-col justify-center item-center gap-8">
-          <h1 className="cursor-default text-center text-black font-serif  items-center"><strong>Link de redefinição foi enviado para o seu email</strong></h1>
+      <div className="w-full h-screen flex justify-center items-center bg-[url(/bg.webp)] bg-cover bg-center bg-no-repeat">
+        <div className="bg-violet-300 max-w-lg p-8 rounded-2xl lg:w-2/3 flex flex-col justify-center item-center gap-8">
+          <h1 className="text-center text-black items-center font-bold text-xl">
+            Um link de redefinição foi enviado para o seu email!
+          </h1>
+
           <Link href="/login">
             <div className='flex justify-center'>
-              <button className="bg-violet-900 w-full  rounded-2xl lg:h-2/3 ">
-                <h1 className="cursor-pointer flex justify-center text-black ">voltar a pagina de login</h1></button>
+              <button className="w-fit h-12 text-white cursor-pointer py-2 px-4 rounded-sm bg-violet-800 hover:bg-violet-700" type='submit'>
+                Voltar a pagina de login
+              </button>
             </div>
           </Link>
         </div>
@@ -35,40 +39,39 @@ export default function EsqueciMinhaSenha() {
           <div className='flex relative w-full justify-center'>
             <Link href="./login">
               <div className='bg-violet-800 hover:bg-violet-700 flex justify-center items-center rounded-full p-1 absolute left-4'>
-
                 <ArrowLeft />
               </div>
             </Link>
 
             <Image src="/icon-3.png" alt="Icone" width={200} height={200} className="mb-4" />
           </div>
+
           <div className=" text-black flex flex-col justify-center items-center font-semibold ">
             <h1>Esqueci minha senha</h1>
           </div>
 
-          <div className="text-gray-500 flex flex-col justify-center items-center  font-normal italic max-w-2xl mx-auto text-center">
+          <div className="text-gray-500 flex flex-col justify-center items-center font-normal italic max-w-2xl mx-auto text-center">
             <p>Para recuperar o acesso, insira o e-mail da sua conta e enviaremos um link para redefinir.</p>
           </div>
+
           <form className="text-black flex flex-col gap-4">
-          <div className='flex flex-col gap-2'>
-            <label htmlFor="email:" className="text-black font-bold ">E-mail:
-              <i className="text-red-500">*</i>
-            </label>
-            <input type="email" name="email" id="email" className="bg-white h-12 px-2 rounded-md border border-gray-500" required />
-          </div>
-          <a href="../esqueci-minha-senha">
-            <div className='flex justify-center'>
-              <button onClick={toggleDisplay} id='enviar' className="h-12 text-white cursor-pointer min-w-20 p-2 rounded-sm bg-violet-800 hover:bg-violet-700" type='submit'>
-                enviar</button>
+            <div className='flex flex-col gap-2'>
+              <label htmlFor="email:" className="text-black font-bold ">E-mail:
+                <i className="text-red-500">*</i>
+              </label>
+              <input type="email" name="email" id="email" className="bg-white h-12 px-2 rounded-md border border-gray-500" required />
             </div>
-          </a>
+
+            <a href="../esqueci-minha-senha">
+              <div className='flex justify-center'>
+                <button onClick={toggleDisplay} id='enviar' className="w-fit h-12 text-white cursor-pointer py-2 px-4 rounded-sm bg-violet-800 hover:bg-violet-700" type='submit'>
+                  Enviar
+                </button>
+              </div>
+            </a>
           </form>
         </div >
-
       </div>
     </div>
   )
-
 }
-
-

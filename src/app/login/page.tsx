@@ -1,4 +1,4 @@
-
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -27,14 +27,13 @@ export default function Login() {
             <input className="bg-white h-12 px-2 rounded-md border border-gray-500" type="password" id="password" name="password" required />
           </div>
 
-          <a href="../esqueci-minha-senha" className="text-violet-800 hover:text-violet-700 underline">Esqueceu a senha?</a>
+          <Link href="../esqueci-minha-senha" className="text-violet-800 hover:text-violet-700 underline">Esqueceu a senha?</Link>
 
-           
-            <a href="../home">
           <div className="flex justify-center">
-             <button className="h-12 text-white cursor-pointer min-w-20 p-2 rounded-sm bg-violet-800 hover:bg-violet-700" type="submit"><a href="../home">Entrar</a></button>
+            <button className="w-fit h-12 text-white cursor-pointer py-2 px-4 rounded-sm bg-violet-800 hover:bg-violet-700" type="submit">
+              Entrar
+            </button>
           </div>
-           </a>
         </form>
       </div>
     </div>
