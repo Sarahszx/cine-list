@@ -29,20 +29,31 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
   }, [props.params]);
 
   return (
-    <div>
-     <Header />
-      <img src={data?.image} alt={data?.name} />
-      
-      <p>Título: {data?.name}</p>
+    <div className="bg-violet-800 min-h-screen flex flex-col gap-10">
+      <Header />
 
-      <span>Elenco: </span>
-      <ul>
-        {(data?.cast || []).map((person, index) => (
-          <div key={index}>{person}</div>
-        ))}
-      </ul>
+      <div className="flex gap-4 px-10">
+        <img src={data?.image} alt={data?.name} className="h-96 aspect-[4/6] rounded-lg " />
 
-      <p></p>
+        <div className="flex flex-col gap-4 text-sm">
+          <h1 className=" font-extrabold text-xl">{data?.name}</h1>
+
+          <p>
+            <span className="mr-4">{data?.year}</span>
+            <span>{data?.duration}</span>
+          </p>
+
+          <h2 className="font-light">{data?.sinopse}</h2>
+
+          <span className="text-lg font-semibold">Elenco: </span>
+
+          <ul>
+            {(data?.cast || []).map((person, index) => (
+              <div key={index}>{person}</div>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
