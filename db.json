@@ -17,7 +17,7 @@
     {
       "id": "2",
       "image": "https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/94/12/24/20304627.jpg",
-      "name": "Piratas do Caribe",
+      "name": "Piratas do Caribe: O Bau Da Morte",
       "category": "Aventura",
       "cast": [
         "Johnny Depp como Capitão Jack Sparrow",
@@ -25,7 +25,7 @@
         "Orlando Bloom como will Tuener",
         "Keira Knightley como Elizabeth Swann"
       ],
-      "sinopse": "Piratas do Caribe: A Maldição do Pérola Negra é um filme de fantasia Swashbuckler de 2003, dirigido por Gore Verbinski e produzido por Jerry Bruckheimer. O filme é baseado no brinquedo Piratas do Caribe dos parques temáticos da Walt Disney Parks and Resorts. A história segue o Capitão pirata Jack Sparrow e o  ferreiro Will Turner enquanto eles tentam resgatar a raptada Elizabeth Swann da tripulação amaldiçoada do Pérola Negra, comandada pelo Capitão Hector Barbossa. O filme foi um  sucesso de bilheteira, arrecadando mais de US$ 654 milhões mundialmente e foi  indicado a cinco Oscars, incluindo Melhor Ator para Johnny Depp"
+      "sinopse": "Will e Elizabeth estão prestes a se casar quando o lendário pirata Davy Jones, comandante de um invencível navio assombrado, aparece para cobrar uma dívida do capitão Jack Sparrow, amigo do casal. Agora, a única chance de Sparrow se livrar de uma maldição de Jones é encontrando o baú da morte."
     },
     {
       "id": "3",
@@ -37,7 +37,7 @@
       "id": "4",
       "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/3/3b/Man_of_Steel%28filme%29.jpg/250px-Man_of_Steel%28filme%29.jpg",
       "name": "Man Of Steel",
-      "category": "ação, aventura sci-fi",
+      "category": "ficção cientifica",
       "cast": [
         "Henry Cavill como Superman",
         "Kevin Costner como Johnathan Kent",
@@ -51,7 +51,7 @@
       "id": "5",
       "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/78/Baby_Driver_poster.png/250px-Baby_Driver_poster.png",
       "name": "Baby Driver",
-      "category": "ação, comédia, policial, suspene"
+      "category": "Ação"
     }
   ]
 }
