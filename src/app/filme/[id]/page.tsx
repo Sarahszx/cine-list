@@ -30,7 +30,7 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
 
   return (
     <div className="bg-violet-800 min-h-screen flex flex-col gap-10">
-      <Header />
+      <Header setSearchTerm={() => {}} />
 
       <div className="flex gap-4 px-10">
         <img src={data?.image} alt={data?.name} className="h-96 aspect-[4/6] rounded-lg " />

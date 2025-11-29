@@ -54,5 +54,17 @@
       "name": "Baby Driver",
       "category": "Ação"
     }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "fabinhodaorabinho@gmail.com",
+      "senha": "euSeiCodar"
+    },
+    {
+      "id": "2",
+      "email": "vespacavalodocao@gmail.com",
+      "senha": "ocao"
+    }
   ]
 }
