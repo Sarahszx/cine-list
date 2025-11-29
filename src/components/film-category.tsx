@@ -14,24 +14,25 @@ export default function FilmCategory({ category, films }: FilmCategoryProps) {
   const visibleFilms = films.slice(currentIndex, currentIndex + 3);
 
   function handleNext() {
-  setCurrentIndex((prev) => prev + 1);
-}
-function handlePrev() {
-  setCurrentIndex((prev) => prev - 1);
-}
+    setCurrentIndex((prev) => prev + 1);
+  }
+  function handlePrev() {
+    setCurrentIndex((prev) => prev - 1);
+  }
   return (
-    <div className="flex gap-10 bg-violet-400 rounded p-6">
-      <div className=" text-black font-bold ">{category}</div>
-    <div className="flex overflow-hidden gap-4">
- {visibleFilms.map((film, index) => (
-  <div key={index} className="flex flex-col gap-2 w-72 wrap-break-word">
-    <Link href={`/filme/${film.id}`}>
-      <img className="aspect-[3/4] w-72" src={film.image} alt={film.name}/>
-    </Link>
-    <p className="text-center text-black">{film.name}</p>
-  </div>
-))}
-    </div>
+    <div className="flex flex-col gap-10 bg-violet-400 rounded p-6">
+      <p className=" text-black font-bold ">{category}</p>
+
+      <div className="flex overflow-hidden gap-4">
+        {visibleFilms.map((film, index) => (
+          <div key={index} className="flex flex-col gap-2 w-72 wrap-break-word">
+            <Link href={`/filme/${film.id}`}>
+              <img className="aspect-[3/4] w-72" src={film.image} alt={film.name} />
+            </Link>
+            <p className="text-center text-black">{film.name}</p>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
