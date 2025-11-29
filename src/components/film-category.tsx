@@ -19,6 +19,7 @@ export default function FilmCategory({ category, films }: FilmCategoryProps) {
   function handlePrev() {
     setCurrentIndex((prev) => prev - 1);
   }
+  
   return (
     <div className="flex flex-col gap-10 bg-violet-400 rounded p-6">
       <p className=" text-black font-bold ">{category}</p>
