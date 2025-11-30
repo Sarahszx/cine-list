@@ -26,13 +26,24 @@
         "Orlando Bloom como will Tuener",
         "Keira Knightley como Elizabeth Swann"
       ],
-      "sinopse": "Will e Elizabeth estão prestes a se casar quando o lendário pirata Davy Jones, comandante de um invencível navio assombrado, aparece para cobrar uma dívida do capitão Jack Sparrow, amigo do casal. Agora, a única chance de Sparrow se livrar de uma maldição de Jones é encontrando o baú da morte."
+      "sinopse": "Will e Elizabeth estão prestes a se casar quando o lendário pirata Davy Jones, comandante de um invencível navio assombrado, aparece para cobrar uma dívida do capitão Jack Sparrow, amigo do casal. Agora, a única chance de Sparrow se livrar de uma maldição de Jones é encontrando o baú da morte.",
+      "year": "2006",
+      "duration": "2h 27m"
     },
     {
       "id": "3",
       "image": "https://br.web.img2.acsta.net/c_310_420/pictures/14/12/11/15/29/051042.jpg",
       "name": "Simplesmente Acontece",
-      "category": "Romance"
+      "category": "Romance",
+      "cast":[
+        "Lily Collins como Rosie Dunne",
+        "Sam Claflin como Alex Stewart",
+        "Christian Cooke como Greg",
+        "Tamsin Egerton como Sally"
+      ],
+      "sinopse": "A história de Alex e Rosie, melhores amigos desde a infância, que enfrentam uma série de mal-entendidos e circunstâncias ao longo dos anos que os impedem de ficarem juntos romanticamente, apesar de seu forte vínculo emocional.",
+      "year": "2014",
+      "duration": "1h 42m"
     },
     {
       "id": "4",
@@ -46,13 +57,26 @@
         "Amy Addams como Lois Lane",
         "Russel Crowe como Jor-El",
         "Michael shanon como Zod"
-      ]
+      ],
+      "sinopse": "Clark Kent descobre suas origens alienígenas quando a Terra é ameaçada por um inimigo de seu planeta natal. Lutando para aceitar seus poderes e identidade, ele deve se tornar o herói que o mundo precisa, enfrentando desafios que testarão sua coragem e determinação.",
+      "year": "2013",
+      "duration": "2h 23m"
     },
     {
       "id": "5",
       "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/78/Baby_Driver_poster.png/250px-Baby_Driver_poster.png",
       "name": "Baby Driver",
-      "category": "Ação"
+      "category": "Ação",
+      "cast": [
+        "Ansel Elgort como Baby",
+        "Kevin Spacey como Doc",
+        "Lily James como Debora",
+        "Jon Hamm como Buddy",
+        "Eiza González como Darling"
+      ],
+      "sinopse": "Baby, um jovem motorista talentoso, trabalha como piloto de fuga para criminosos, usando sua habilidade ao volante e uma trilha sonora personalizada para escapar das cenas dos crimes. No entanto, quando ele se apaixona por Debora, uma garçonete, Baby decide deixar sua vida criminosa para trás. Mas seu chefe, Doc, não está disposto a deixá-lo sair tão facilmente, forçando Baby a participar de um último assalto que pode colocar tudo em risco.",
+      "year": "2017",
+      "duration": "1h 53m"
     }
   ],
   "users": [
