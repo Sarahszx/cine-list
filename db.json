@@ -77,6 +77,40 @@
       "sinopse": "Baby, um jovem motorista talentoso, trabalha como piloto de fuga para criminosos, usando sua habilidade ao volante e uma trilha sonora personalizada para escapar das cenas dos crimes. No entanto, quando ele se apaixona por Debora, uma garçonete, Baby decide deixar sua vida criminosa para trás. Mas seu chefe, Doc, não está disposto a deixá-lo sair tão facilmente, forçando Baby a participar de um último assalto que pode colocar tudo em risco.",
       "year": "2017",
       "duration": "1h 53m"
+    },
+    {
+      "id": "6",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/f/fa/World_War_Z.jpg/250px-World_War_Z.jpg",
+      "name": "Guerra Mundial Z",
+      "category":"Ação",
+      "cast": [
+        "Brad Pitt como Gerry Lane",         
+        "Mireille Enos como Karin Lane",
+        "Sterling Jerins como Constance Lane",
+        "Abigail Hargrove como Rachel Lane",
+        "James Badge Dale como Capitão Speke",
+        "Daniella Kertesz como Segen, soldado das Forças de Defesa de Israel"
+      ],
+      "sinopse":"Um misterioso vírus zumbi se espalha rapidamente pelo mundo, matando a maioria da população global. O ex-investigador da ONU, Gerry Lane, é designado para estudar a origem do vírus e desenvolver uma cura, iniciando  uma corrida contra o tempo antes que a humanidade seja completamente extinta.",
+      "year": "2013",
+      "duration": "1h 56m"
+    },
+    {
+      "id": "7",
+      "image": "",
+      "name": "Deu a Louca na Chapeuzinho",
+      "category": "Animação",
+      "cast":[
+         "Todd Edwards",
+        "Anne Hathaway",
+        "Glenn Close",
+        "Jim Belushi",
+        "Patrick Warburton",
+        "Anthony Anderson" 
+      ],
+      "sinopse": "",
+      "year": "2013",
+      "duration": ""
     }
   ],
   "users": [
