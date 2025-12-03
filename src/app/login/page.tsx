@@ -1,12 +1,17 @@
 'use client';
 
+import { User } from "@/types";
+import { Eye, EyeClosed } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { SyntheticEvent, useState } from "react";
 
 export default function Login() {
+  const router = useRouter();
   const [email, setEmail] = useState('')
-  const [senha, setSenha] = useState('');
+  const [password, setPassword] = useState('');
   const [mensagem, setMensagem] = useState('');
+  const [passwordVisible, setPasswordVisible] = useState(false);
 
   const handleLogin = async (e: SyntheticEvent<HTMLElement>) => {
     e.preventDefault()
@@ -21,22 +26,23 @@ export default function Login() {
         throw new Error('Erro de login');
       }
 
-      const data = await response.json();
-
-      const user = data.find((user: any) => user.email = email)
+      const data: User[] = await response.json();
+      
+      const user = data.find((user: User) => user.email === email);
       
       if (!user) {
         throw new Error('Erro de login');
       }
-
-      if (user.senha !== senha) {
+      
+      if (user.password !== password) {
         throw new Error('Erro de login');
       }
 
-      console.log(data)
-      setMensagem('Login realizado com sucesso! Token: ${data.token}');
+      router.push('/');
     } catch (error) {
-      setMensagem('erro ao fazer o login');
+      console.error(error);
+
+      setMensagem('Erro ao fazer o login!');
     }
 };
   return (
@@ -64,16 +70,31 @@ export default function Login() {
               Senha:
               <i className="text-red-500">*</i>
             </label>
-            <input className="bg-white h-12 px-2 rounded-md border border-gray-500" type="password" id="password" name="password" value={senha} onChange={(e) => setSenha(e.target.value)} required />
+
+            <div className="relative">
+              <input className="w-full bg-white h-12 px-2 rounded-md border border-gray-500" type={passwordVisible ? 'text' : 'password'} id="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+
+              <div className="absolute top-3.5 right-3 cursor-pointer" onClick={() => setPasswordVisible(prev => !prev)}>
+                {passwordVisible
+                  ? (
+                    <Eye size={20} />
+                  ): (
+                    <EyeClosed size={20} />
+                  )
+                }
+              </div>
+            </div>
+
           </div>
 
-          <Link href="../esqueci-minha-senha" className="text-violet-800 hover:text-violet-700 underline">Esqueceu a senha?</Link>
+          <Link href="../esqueci-minha-senha" className="w-fit text-violet-800 hover:text-violet-700 underline">Esqueceu a senha?</Link>
 
-          <div className="flex justify-center">
+          <div className="flex flex-col justify-center items-center gap-4">
+            <p className="text-red-600">{mensagem}</p>
+            
             <button className="w-fit h-12 text-white cursor-pointer py-2 px-4 rounded-sm bg-violet-800 hover:bg-violet-700" type="submit">
               Entrar
             </button>
-            <p>{mensagem}</p>
           </div>
         </form>
       </div>

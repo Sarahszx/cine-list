@@ -14,3 +14,9 @@ export interface FilmsByCategory {
   category: string;
   films: Film[];
 }
+
+export interface User {
+  id: string;
+  email: string;
+  password: string;
+}
