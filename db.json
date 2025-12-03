@@ -83,12 +83,12 @@
     {
       "id": "1",
       "email": "fabinhodaorabinho@gmail.com",
-      "senha": "euSeiCodar"
+      "password": "euSeiCodar"
     },
     {
       "id": "2",
       "email": "vespacavalodocao@gmail.com",
-      "senha": "ocao"
+      "password": "ocao"
     }
   ]
 }

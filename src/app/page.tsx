@@ -1,6 +1,7 @@
 'use client';
 
 import FilmCategory from "@/components/film-category";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { Film, FilmsByCategory } from "@/types";
 import { useEffect, useState } from "react";
@@ -67,6 +68,8 @@ export default function Home() {
           />
         ))}
       </div>
+
+      <Footer />
     </div>
   );
 }
