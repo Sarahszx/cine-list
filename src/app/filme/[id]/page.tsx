@@ -2,10 +2,12 @@
 
 import Header from "@/components/header";
 import { Film } from "@/types";
+import { X, Youtube } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function FilmPage(props: PageProps<'/filme/[id]'>) {
-  const [data, setData] = useState<Film | null>(null)
+  const [data, setData] = useState<Film | null>(null);
+  const [showModal, setShowModal] = useState(false)
 
   useEffect(() => {
     const fetchFilm = async () => {
@@ -38,10 +40,16 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
         <div className="flex flex-col gap-4 text-sm">
           <h1 className=" font-extrabold text-xl">{data?.name}</h1>
 
-          <p>
+          <div className="flex gap-4 items-center">
             <span className="mr-4">{data?.year}</span>
             <span>{data?.duration}</span>
-          </p>
+            <button onClick={() => setShowModal(true)} className="flex gap-2 items-center w-fit h-10 text-white cursor-pointer py-2 px-4 rounded-full bg-purple-500 hover:bg-purple-400" type="button">
+              <span><Youtube /></span>
+              <span>
+                ASSISTIR AO TRAILER NO YOUTUBE
+              </span>
+            </button>
+          </div>
 
           <h2 className="font-light">{data?.sinopse}</h2>
 
@@ -54,6 +62,16 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
           </ul>
         </div>
       </div>
+
+      {showModal && (
+        <div className="absolute w-full h-screen bg-black/80">
+          <div className="relative w-full h-full flex justify-center items-center">
+            <button onClick={() => setShowModal(prev => !prev)} className="absolute top-5 right-5 cursor-pointer"><X size={24}/></button>
+
+            <div className="bg-white text-black w-96 h-96">Oi</div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
