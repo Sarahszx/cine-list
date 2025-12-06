@@ -97,21 +97,399 @@
     },
     {
       "id": "7",
-      "image": "",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/2/24/Hoodwinked.jpg",
       "name": "Deu a Louca na Chapeuzinho",
       "category": "Animação",
       "cast":[
-         "Todd Edwards",
+        "Todd Edwards",
         "Anne Hathaway",
         "Glenn Close",
         "Jim Belushi",
         "Patrick Warburton",
         "Anthony Anderson" 
       ],
-      "sinopse": "",
+      "sinopse": "Chapeuzinho Vermelho chega na casa de sua avó, mas descobre que um Lobo Mau se disfarçou de Vovó, que então ataca Chapeuzinho. A própria avó pula do armário amarrada para salvar Chapeuzinho, assim como um lenhador de machado irrompe pela janela, surpreendendo a todos. A polícia chega rapidamente e Chapeuzinho, Lobo, Vovó e o Lenhador são interrogados pelo detetive Nick Pirueta/Badanas sobre os eventos que antecederam o incidente.",
       "year": "2013",
-      "duration": ""
+      "duration": "1h 28m"
+    },
+    {
+      "id": "8",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/6/6b/%28500%29_Days_of_Summer.jpg/250px-%28500%29_Days_of_Summer.jpg",
+      "name": "(500) Dias com Ela",
+      "category": "Romance",
+      "cast": [
+        "Joseph Gordon-Levitt como Tom Hansen",
+        "Zooey Deschanel como Summer Finn",
+        "Geoffrey Arend como McKenzie",
+        "Chloë Grace Moretz como Rachel Hansen"
+      ],
+      "sinopse": "Tom Hansen, um romântico incurável, o escritor de cartões de felicitações se apaixona por Summer Finn, sua colega de trabalho que não acredita em amor verdadeiro. O filme narra os altos e baixos do relacionamento deles ao longo de 500 dias, explorando temas de amor, expectativas e realidade.",
+      "year": "2009",
+      "duration": "1h 35m"
+    },
+
+    {
+      "id": "9",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/84/AOrigemPoster.jpg/250px-AOrigemPoster.jpg",
+      "name": "A Origem",
+      "category": "Ficção Científica", 
+      "cast": [
+        "Leonardo DiCaprio como Dom Cobb",
+        "Joseph Gordon-Levitt como Arthur",
+        "Elliot Page como Ariadne",
+        "Tom Hardy como Eames"
+      ],
+      "sinopse": "Dom Cobb, juntamente com seu organizador e braço direito Arthur, estão em uma missão de invasão da mente do poderoso empresário japonês Saito usando uma técnica de espionagem industrial através dos sonhos. A dor é sentida nos sonhos, porém a morte leva a pessoa a acordar. Cobb carrega consigo um totem na forma de pião, que originalmente pertencia à sua falecida esposa Mal, para determinar se ele está sonhando ou não. A extração falha devido à intervenção de Mal, cujas lembranças assombram a mente de Cobb e sabotam suas missões. Saito revela que ele estava, na verdade, fazendo um teste para saber se a equipe tinha capacidade de fazer uma inserção, ou seja, usar os sonhos de uma pessoa para implantar a origem de uma ideia. Em troca, ele promete livrar todas as acusações de assassinato contra Cobb, se a missão for bem sucedida, para que ele possa rever seus filhos nos Estados Unidos.",
+      "year": "2010",
+      "duration": "2h 28m"
+    },
+    {
+      "id": "10",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/5/53/The_Amazing_Spider-Man_Poster.jpg/250px-The_Amazing_Spider-Man_Poster.jpg",
+      "name": "O Espetacular Homem-Aranha",
+      "category":"Ação",
+      "cast": [
+        "Andrew Garfield como Peter Parker",
+        "Emma Stone como Gwen Stacy",
+        "Rhys Ifans como Dr. Connors"
+      ],
+      "sinopse": "Peter Parker descobre seus poderes e tenta salvar Nova York do Lagarto.",
+      "year": "2012",
+      "duration": "2h 16m"
+    },
+    {
+      "id": "11",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/3/3a/Interstellar_Filme.png/250px-Interstellar_Filme.png",
+      "name": "Interestelar",
+      "category": "Ficção Científica",
+      "cast": [
+        "Matthew McConaughey como Cooper",
+        "Anne Hathaway como Amelia Brand",
+        "Jessica Chastain como Murph"
+      ],
+      "sinopse": "Exploradores viajam pelo espaço em busca de um novo lar para a humanidade.",
+      "year": "2014",
+      "duration": "2h 49m"
+    },
+    {
+      "id": "12",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/2b/FightClubPoster.jpg/250px-FightClubPoster.jpg",
+      "name": "Clube da Luta",
+      "category": "Drama",
+      "cast": [
+        "Brad Pitt como Tyler Durden",
+        "Edward Norton como Narrador",
+        "Helena Bonham Carter como Marla Singer"
+      ],
+      "sinopse": "Um homem insone conhece um vendedor de sabão e juntos criam um clube secreto de luta.",
+      "year": "1999",
+      "duration": "2h 19m"
+    },
+    {
+      "id": "13",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/9/99/Tangled_Disney.jpg/250px-Tangled_Disney.jpg",
+      "name": "Enrolados",
+      "category": "Animação",
+      "cast": [
+        "Mandy Moore como Rapunzel",
+        "Zachary Levi como Flynn Rider"
+      ],
+      "sinopse": "A jovem Rapunzel deixa sua torre pela primeira vez com a ajuda de um ladrão charmoso.",
+      "year": "2010",
+      "duration": "1h 40m"
+    },
+    {
+      "id": "14",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/6/69/The_Avengers_Cartaz.jpg/250px-The_Avengers_Cartaz.jpg",
+      "name": "Os Vingadores",
+      "category": "Ação",
+      "cast": [
+        "Robert Downey Jr. como Tony Stark",
+        "Chris Evans como Capitão América",
+        "Scarlett Johansson como Viúva Negra",
+        "Chris Hemsworth como Thor"
+      ],
+      "sinopse": "Os maiores heróis da Terra se unem para impedir a invasão de Loki.",
+      "year": "2012",
+      "duration": "2h 23m"
+    },
+    {
+      "id": "15",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/1/1d/Harry_Potter_Pedra_Filosofal_2001.jpg/250px-Harry_Potter_Pedra_Filosofal_2001.jpg",
+      "name": "Harry Potter e a Pedra Filosofal",
+      "category": "Fantasia",
+      "cast": [
+        "Daniel Radcliffe como Harry Potter",
+        "Emma Watson como Hermione Granger",
+        "Rupert Grint como Ron Weasley"
+      ],
+      "sinopse": "Um garoto descobre que é um bruxo e entra para a Escola de Magia e Bruxaria de Hogwarts.",
+      "year": "2001",
+      "duration": "2h 32m"
+    },
+    {
+      "id": "16",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/1/13/John_wick_ver3.jpg/250px-John_wick_ver3.jpg",
+      "name": "John Wick",
+      "category": "Ação",
+      "cast": [
+        "Keanu Reeves como John Wick"
+      ],
+      "sinopse": "Um ex-assassino busca vingança contra os criminosos que destruíram sua vida.",
+      "year": "2014",
+      "duration": "1h 41m"
+    },
+    {
+      "id": "17",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/ac/The_Conjuring.jpg/250px-The_Conjuring.jpg",
+      "name": "Invocação do Mal",
+      "category": "Terror",
+      "cast": [
+        "Vera Farmiga como Lorraine Warren",
+        "Patrick Wilson como Ed Warren"
+      ],
+      "sinopse": "Investigadores paranormais tentam salvar uma família de uma entidade demoníaca.",
+      "year": "2013",
+      "duration": "1h 52m"
+    },
+    {
+      "id": "18",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/c/c0/La_La_Land_%28filme%29.png/250px-La_La_Land_%28filme%29.png",
+      "name": "La La Land",
+      "category": "Romance",
+      "cast": [
+        "Emma Stone como Mia",
+        "Ryan Gosling como Sebastian"
+      ],
+      "sinopse": "Um casal luta para equilibrar seus sonhos com o relacionamento.",
+      "year": "2016",
+      "duration": "2h 8m"
+    },
+    {
+      "id": "19",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/4/4d/Jurassic_World_2015.jpg/250px-Jurassic_World_2015.jpg",
+      "name": "Jurassic World",
+      "category": "Ação",
+      "cast": [
+        "Chris Pratt como Owen Grady",
+        "Bryce Dallas Howard como Claire"
+      ],
+      "sinopse": "Um parque com dinossauros recriados geneticamente enfrenta o caos quando uma criatura escapa.",
+      "year": "2015",
+      "duration": "2h 4m"
+    },
+    {
+      "id": "20",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/2f/6875.jpg/250px-6875.jpg",
+      "name": "Bob Esponja: Um Herói Fora D'Água",
+      "category": "Animação",
+      "cast": [
+        "Tom Kenny como Bob Esponja",
+        "Bill Fagerbakke como Patrick Estrela",
+        "Clancy Brown como Senhor Siriguejo", 
+        "Rodger Bumpass como Lula Molusco",
+        "Mr. Lawrence como Plankton",
+        "Carolyn Lawrence como Sandy Bochechas"
+        
+      ],
+      "sinopse": "Bob Esponja e seus amigos embarcam em uma aventura para recuperar a receita secreta do hambúrguer de siri, enfrentando desafios tanto no fundo do mar quanto na superfície.",
+      "year": "2015",
+      "duration": "1h 35m"
+    },
+    {
+      "id": "21",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/3/3b/Deadpool_2016.jpg/250px-Deadpool_2016.jpg",
+      "name": "Deadpool",
+      "category": "Ação",
+      "cast": [
+        "Ryan Reynolds como Deadpool",
+        "Morena Baccarin como Vanessa"
+      ],
+      "sinopse": "Um anti-herói cheio de sarcasmo busca vingança após ganhar poderes.",
+      "year": "2016",
+      "duration": "1h 48m"
+    },
+    {
+      "id": "22",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/2/23/Max_Mad_Fury_Road_Newest_Poster.jpg/250px-Max_Mad_Fury_Road_Newest_Poster.jpg",
+      "name": "Mad Max: Estrada da Fúria",
+      "category": "Ação",
+      "cast": [
+        "Tom Hardy como Max",
+        "Charlize Theron como Furiosa"
+      ],
+      "sinopse": "Em um deserto pós-apocalíptico, Max e Furiosa tentam fugir de um tirano em uma perseguição frenética.",
+      "year": "2015",
+      "duration": "2h 0m"
+    },
+    {
+      "id": "23",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/8/82/It_2017.jpg/250px-It_2017.jpg",
+      "name": "It: A Coisa",
+      "category": "Terror",
+      "cast": [
+        "Bill Skarsgård como Pennywise"
+      ],
+      "sinopse": "Um palhaço demoníaco aterroriza crianças em uma pequena cidade.",
+      "year": "2017",
+      "duration": "2h 15m"
+    },
+    {
+      "id": "24",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/e/e6/Shrek_Poster.jpg",
+      "name": "Shrek",
+      "category": "Animação",
+      "cast": [
+        "Mike Myers como Shrek",
+        "Eddie Murphy como Burro"
+      ],
+      "sinopse": "Um ogro mal-humorado embarca em uma missão para salvar uma princesa.",
+      "year": "2001",
+      "duration": "1h 30m"
+    },
+    {
+      "id": "25",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/c/c1/The_Matrix_Poster.jpg",
+      "name": "Matrix",
+      "category": "Ficção Científica",
+      "cast": [
+        "Keanu Reeves como Neo"
+      ],
+      "sinopse": "Neo descobre que vive em uma simulação criada por máquinas.",
+      "year": "1999",
+      "duration": "2h 16m"
+    },
+    {
+      "id": "26",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/d/d1/The_Dark_Knight.jpg/250px-The_Dark_Knight.jpg",
+      "name": "Batman: O Cavaleiro das Trevas",
+      "category": "Ação",
+      "cast": [
+        "Christian Bale como Batman",
+        "Heath Ledger como Coringa"
+      ],
+      "sinopse": "Batman enfrenta o caos instaurado pelo Coringa.",
+      "year": "2008",
+      "duration": "2h 32m"
+    },
+    {
+      "id": "27",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/0/00/Spider-Man_No_Way_Home_poster.jpg/250px-Spider-Man_No_Way_Home_poster.jpg",
+      "name": "Homem-Aranha: Sem Volta Para Casa",
+      "category": "Ação",
+      "cast": [
+        "Tom Holland como Peter Parker",
+        "Tobey Maguire como Homem-Aranha",
+        "Andrew Garfield como Homem-Aranha",
+        "Benedict Cumberbatch como Doutor Estranho",
+        "Zendaya como MJ",
+        "Alfred Molina como Doutor Octopus",
+        "Willem Dafoe como Duende Verde"
+      ],
+      "sinopse": "Peter pede ajuda ao Doutor Estranho e abre o multiverso acidentalmente.",
+      "year": "2021",
+      "duration": "2h 28m"
+    },
+    {
+      "id": "28",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a8/Up_p%C3%B4ster.jpg/250px-Up_p%C3%B4ster.jpg",
+      "name": "Up: Altas Aventuras",
+      "category": "Animação",
+      "cast": [
+        "Edward Asner como Carl",
+        "Jordan Nagai como Russell"
+      ],
+      "sinopse": "Um idoso viaja para a América do Sul em sua casa suspensa por balões.",
+      "year": "2009",
+      "duration": "1h 36m"
+    },
+    {
+      "id": "29",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/7/72/Mr_and_Mrs_Smith.png/330px-Mr_and_Mrs_Smith.png",
+      "name": "Mr. & Mrs. Smith",
+      "category": "Ação",
+      "cast": [
+        "Brad Pitt como John Smith",
+        "Angelina Jolie como Jane Smith"
+      ],
+      "sinopse": "Um casal de assassinos secretos descobre que foram contratados para matar um ao outro.",
+      "year": "2005",
+      "duration": "2h 10m"
+    },
+    {
+      "id": "30",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/7/7e/Toy_Story_3.jpg",
+      "name": "Toy Story 3",
+      "category": "Animação",
+      "cast": [
+        "Tom Hanks como Woody",
+        "Tim Allen como Buzz"
+      ],
+      "sinopse": "Os brinquedos enfrentam novos desafios quando Andy vai para a faculdade.",
+      "year": "2010",
+      "duration": "1h 43m"
+    },
+    {
+      "id": "31",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/4/46/Deadpool_2.jpg/250px-Deadpool_2.jpg",
+      "name": "Deadpool 2",
+      "category": "Ação",
+      "cast": [
+        "Ryan Reynolds como Deadpool",
+        "Josh Brolin como Cable",
+        "Zazie Beetz como Domino"
+      ],
+      "sinopse": "Deadpool forma uma equipe para proteger um jovem mutante de um viajante do tempo.",
+      "year": "2018",
+      "duration": "2h 0m"
+    },
+    {
+      "id": "32",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/f/fd/Me_Before_You_%28film%29.jpg",
+      "name": "Me Before You",
+      "category": "Romance",
+      "cast": [
+        "Emilia Clarke como Louisa Clark",
+        "Sam Claflin como Will Traynor"
+      ],
+      "sinopse": "Uma jovem cuidadora desenvolve um vínculo inesperado com um homem tetraplégico.",
+      "year": "2016",
+      "duration": "1h 50m"
+    },
+    {
+      "id": "33",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/7/76/Kingsman_The_Secret_Service_capa.jpg",
+      "name": "Kingsman: The Secret Service",
+      "category": "Ação",
+      "cast": [
+        "Taron Egerton como Eggsy",
+        "Colin Firth como Harry Hart",
+        "Samuel L. Jackson como Richmond Valentine",
+        "Mark Strong como Merlin",
+        "Michael Caine como Arthur"
+      ],
+      "sinopse": "Um jovem recruta é treinado para se tornar um espião em uma organização secreta.",
+      "year": "2014",
+      "duration": "2h 9m"
+    },
+    {
+      "id": "34",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/b/b0/Harry_Potter_Half_Blood_Prince_2009.jpg/250px-Harry_Potter_Half_Blood_Prince_2009.jpg",
+      "name": "Harry Potter e o Enigma do Príncipe",
+      "category": "Fantasia",
+      "cast": [
+        "Daniel Radcliffe como Harry Potter",
+        "Emma Watson como Hermione Granger",
+        "Rupert Grint como Ron Weasley",
+        "Helena Bonham Carter como Belatriz Lestrange",
+        "Ralph Fiennes como Lord Voldemort"
+
+      ],
+      "sinopse": "Harry Potter descobre um livro misterioso e enfrenta novos desafios em sua luta contra Voldemort.",
+      "year": "2009",
+      "duration": "2h 33m"
     }
+    
   ],
   "users": [
     {
