@@ -29,32 +29,33 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
 
     fetchFilm();
   }, [props.params]);
-  console.log(data)
-
 
   const toEmbedUrl = (url?: string) => {
     if (!url) return '';
+
     try {
       const u = new URL(url);
       const host = u.hostname.replace(/^www\./, '');
 
       if (host === 'youtu.be') {
         const id = u.pathname.slice(1);
+
         return `https://www.youtube.com/embed/${id}`;
       }
 
-    
+
       if (host === 'youtube.com' || host === 'youtube-nocookie.com' || host.endsWith('youtube.com')) {
         if (u.pathname.startsWith('/watch')) {
           const v = u.searchParams.get('v');
+
           if (v) return `https://www.youtube.com/embed/${v}`;
         }
+        
         if (u.pathname.startsWith('/embed/')) {
           return url;
         }
       }
 
-    
       return url;
     } catch {
       return url;
@@ -65,7 +66,7 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
 
   return (
     <div className="bg-violet-800 min-h-screen flex flex-col gap-10">
-      <Header setSearchTerm={() => {}} />
+      <Header setSearchTerm={() => { }} />
 
       <div className="flex gap-4 px-10">
         <img src={data?.image} alt={data?.name} className="h-96 aspect-[4/6] rounded-lg " />
@@ -76,12 +77,15 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
           <div className="flex gap-4 items-center">
             <span className="mr-4">{data?.year}</span>
             <span>{data?.duration}</span>
-            <button onClick={() => setShowModal(true)} className="flex gap-2 items-center w-fit h-10 text-white cursor-pointer py-2 px-4 rounded-full bg-purple-500 hover:bg-purple-400" type="button">
-              <span><Youtube /></span>
-              <span>
-                ASSISTIR AO TRAILER NO YOUTUBE
-              </span>
-            </button>
+
+            {data?.url && (
+              <button onClick={() => setShowModal(true)} className="flex gap-2 items-center w-fit h-10 text-white cursor-pointer py-2 px-4 rounded-full bg-purple-500 hover:bg-purple-400" type="button">
+                <span><Youtube /></span>
+                <span>
+                  ASSISTIR AO TRAILER NO YOUTUBE
+                </span>
+              </button>
+            )}
           </div>
 
           <h2 className="font-light">{data?.sinopse}</h2>
@@ -99,10 +103,10 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
       {showModal && (
         <div className="absolute w-full h-screen bg-black/80">
           <div className="relative w-full h-full flex justify-center items-center">
-            <button onClick={() => setShowModal(prev => !prev)} className="absolute top-5 right-5 cursor-pointer"><X size={24}/></button>
+            <button onClick={() => setShowModal(prev => !prev)} className="absolute top-5 right-5 cursor-pointer"><X size={24} /></button>
 
-            <div className="bg-white text-black w-96 h-96">
-                 <iframe
+            <div className="w-2/3 aspect-video">
+              <iframe
                 width="100%"
                 height="100%"
                 src={embedUrl}
@@ -115,7 +119,7 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
           </div>
         </div>
       )}
-      
+
     </div>
   );
 }
