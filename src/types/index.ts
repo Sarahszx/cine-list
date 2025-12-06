@@ -8,6 +8,7 @@ export interface Film {
   sinopse: string;
   year: number;
   duration: number;
+  url: 'https://www.youtube.com/embed/'
 }
 
 export interface FilmsByCategory {

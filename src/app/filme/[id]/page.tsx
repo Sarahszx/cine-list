@@ -29,6 +29,39 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
 
     fetchFilm();
   }, [props.params]);
+  console.log(data)
+
+
+  const toEmbedUrl = (url?: string) => {
+    if (!url) return '';
+    try {
+      const u = new URL(url);
+      const host = u.hostname.replace(/^www\./, '');
+
+      if (host === 'youtu.be') {
+        const id = u.pathname.slice(1);
+        return `https://www.youtube.com/embed/${id}`;
+      }
+
+    
+      if (host === 'youtube.com' || host === 'youtube-nocookie.com' || host.endsWith('youtube.com')) {
+        if (u.pathname.startsWith('/watch')) {
+          const v = u.searchParams.get('v');
+          if (v) return `https://www.youtube.com/embed/${v}`;
+        }
+        if (u.pathname.startsWith('/embed/')) {
+          return url;
+        }
+      }
+
+    
+      return url;
+    } catch {
+      return url;
+    }
+  };
+
+  const embedUrl = toEmbedUrl(data?.url);
 
   return (
     <div className="bg-violet-800 min-h-screen flex flex-col gap-10">
@@ -68,10 +101,21 @@ export default function FilmPage(props: PageProps<'/filme/[id]'>) {
           <div className="relative w-full h-full flex justify-center items-center">
             <button onClick={() => setShowModal(prev => !prev)} className="absolute top-5 right-5 cursor-pointer"><X size={24}/></button>
 
-            <div className="bg-white text-black w-96 h-96">Oi</div>
+            <div className="bg-white text-black w-96 h-96">
+                 <iframe
+                width="100%"
+                height="100%"
+                src={embedUrl}
+                title="Trailer do filme"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
         </div>
       )}
+      
     </div>
   );
 }
